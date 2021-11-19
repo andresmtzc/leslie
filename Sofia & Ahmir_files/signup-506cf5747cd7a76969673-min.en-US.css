@@ -1,0 +1,186 @@
+@media screen and (max-width:432px)
+{
+.mobile-hidden {
+	display: none;
+}
+}
+@media screen and (max-width:432px)
+{
+.subDesktop-hidden {
+	display: none;
+}
+}
+@media screen and (min-width:433px)
+{
+.desktop-hidden {
+	display: none;
+}
+}
+#sqs-signup-pill {
+	font: 12px/normal "Clarkson", "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius: 0px; height: 70px; text-align: left !important; right: 11px; bottom: 11px; letter-spacing: normal; white-space: nowrap; position: fixed; z-index: 20000; cursor: pointer; font-size-adjust: none; font-stretch: normal; background-color: rgb(34, 34, 34); -webkit-user-select: none;
+}
+#sqs-signup-pill .sqs-signup-pill-body {
+	padding-top: 10px; padding-left: 30px; display: inline-block;
+}
+#sqs-signup-pill .sqs-signup-pill-body-title {
+	color: rgb(255, 255, 255); letter-spacing: normal; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 13px; font-weight: bold;
+}
+#sqs-signup-pill .sqs-signup-pill-body-description {
+	color: rgb(153, 153, 153); line-height: 12px; letter-spacing: normal; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 10px;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons {
+	top: -5px; padding-top: 11px; padding-right: 10px; padding-left: 30px; display: inline-block; position: relative;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-manage {
+	font: 400 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius: 20px; border: 0px currentColor; border-image: none; color: rgb(238, 238, 238); margin-right: 5px; display: inline-block; cursor: pointer; font-size-adjust: none; font-stretch: normal; background-color: rgb(39, 39, 39);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-manage a {
+	padding: 7px 15px; color: rgb(238, 238, 238); text-decoration: none; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; display: inline-block;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-manage:hover a {
+	color: rgb(255, 255, 255);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-manage:focus {
+	color: rgb(221, 221, 221); box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 0px 2px #42b1ff;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save {
+	font: 400 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius: 20px; border: 0px currentColor; border-image: none; color: rgb(17, 17, 17); margin-right: 3px; margin-left: 1px; display: inline-block; cursor: pointer; font-size-adjust: none; font-stretch: normal; background-color: rgb(229, 229, 229);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel {
+	font: 400 11px/14px "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius: 20px; border: 0px currentColor; border-image: none; color: rgb(17, 17, 17); margin-right: 3px; margin-left: 1px; display: inline-block; cursor: pointer; font-size-adjust: none; font-stretch: normal; background-color: rgb(229, 229, 229);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save a {
+	padding: 7px 15px; color: rgb(238, 238, 238); text-decoration: none; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; display: inline-block;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel a {
+	padding: 7px 15px; color: rgb(238, 238, 238); text-decoration: none; border-bottom-color: currentColor; border-bottom-width: 0px; border-bottom-style: none; display: inline-block;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save:hover a {
+	color: rgb(255, 255, 255);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel:hover a {
+	color: rgb(255, 255, 255);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save:focus {
+	color: rgb(221, 221, 221); box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 0px 2px #42b1ff;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel:focus {
+	color: rgb(221, 221, 221); box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 0px 2px #42b1ff;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save:hover a {
+	color: rgb(17, 17, 17);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel:hover a {
+	color: rgb(17, 17, 17);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save a {
+	color: rgb(34, 34, 34);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel a {
+	color: rgb(34, 34, 34);
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-save:focus {
+	color: rgb(17, 17, 17); box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 0px 2px #42b1ff;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-cancel:focus {
+	color: rgb(17, 17, 17); box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1), 0px 0px 0px 2px #42b1ff;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-done {
+	background: url("//assets.squarespace.com/universal/images-v6/icons/icon-close-8-light.png") no-repeat center; transition:opacity 0.3s ease-out; width: 36px; height: 36px; text-indent: -9999px; display: inline-block; opacity: 0.5;
+}
+#sqs-signup-pill .sqs-signup-pill-buttons-done:hover {
+	opacity: 1;
+}
+#sqs-signup-pill .sqs-signup-pill-body {
+	background: url("//assets.squarespace.com/universal/images-v6/damask/logo-light.svg?20181218") no-repeat 22px 23px; padding-top: 21px; padding-right: 43px; padding-left: 68px;
+}
+#sqs-signup-pill .sqs-signup-pill-body-title {
+	color: rgb(255, 255, 255); font-size: 14px; font-weight: normal;
+}
+#sqs-signup-pill:hover .sqs-signup-pill-body-title {
+	color: rgb(255, 255, 255);
+}
+body.squarespace-config.preview-open {
+	overflow: hidden;
+}
+.sqs-template-picker {
+	background: rgba(0, 0, 0, 0.8); transition:opacity 0.4s; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; font-size: 12px; position: fixed; z-index: 51000; min-width: 900px; opacity: 0;
+}
+.sqs-template-picker * {
+	box-sizing: border-box;
+}
+.sqs-template-picker .sqs-template-picker-content {
+	transform-origin: 50% 50%; transition:0.5s; left: 0px; top: 0px; width: 100%; height: 100%; padding-bottom: 70px; position: relative; transform: scale(0.97);
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header {
+	background: rgb(24, 24, 24); padding: 0px; width: 100%; height: 70px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; border-bottom-style: solid; position: relative; z-index: 2;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header .close-button {
+	background-position: 27.5px 27.5px; transition:opacity 0.15s; width: 70px; height: 70px; border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(51, 51, 51); border-bottom-width: 1px; border-left-width: 1px; border-bottom-style: solid; border-left-style: solid; float: right; display: block; opacity: 0.7; background-image: url("/universal/images-v6/icons/icon-closethin-15-light.png"); background-repeat: no-repeat;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header .close-button:hover {
+	opacity: 1;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header .instructions-wrapper {
+	padding: 17px; left: 3px; color: rgb(255, 255, 255); font-weight: 300; position: absolute;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header .instructions-wrapper .title {
+	font-size: 16px;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-header .instructions-wrapper .description {
+	color: rgb(204, 204, 204);
+}
+.sqs-template-picker .sqs-template-picker-content .preview-viewport {
+	background: radial-gradient(at center, rgb(43, 43, 43) 0%, rgb(12, 12, 12) 100%); transition:0.4s; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: relative; z-index: 1;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-viewport .inner {
+	transition:0.4s; left: 0px; top: 0px; width: 100%; height: 100%; visibility: hidden; position: relative; opacity: 0;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-viewport iframe {
+	background: rgb(255, 255, 255); margin: 0px; border: 0px currentColor; border-image: none; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 2;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-viewport .display-placeholder {
+	left: 0px; top: 0px; width: 100%; height: 100%; display: none; position: absolute; z-index: 3;
+}
+.sqs-template-picker .sqs-template-picker-content .preview-viewport .chrome {
+	margin: 0px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; z-index: 1;
+}
+.sqs-template-picker.no-description .instructions-wrapper .title {
+	padding: 0px; line-height: 35px;
+}
+.sqs-template-picker.no-description .instructions-wrapper .description {
+	display: none;
+}
+.sqs-template-picker .loading-indicator {
+	padding: 4px 8px; transform-origin: 50% 50%; border-radius: 2px; transition:0.4s; left: 50%; top: 46%; width: 170px; height: 150px; margin-top: -75px; margin-left: -85px; position: absolute; z-index: 1; opacity: 1;
+}
+.sqs-template-picker .loading-indicator .sqs-spin {
+	margin: 0px auto; top: 42%; display: block;
+}
+.sqs-template-picker .loading-indicator span {
+	left: 0px; width: 100%; text-align: center; bottom: 20px; color: rgb(255, 255, 255); display: block; position: absolute;
+}
+.sqs-template-picker.loaded .preview-viewport .inner {
+	visibility: visible; opacity: 1;
+}
+.sqs-template-picker.loaded .loading-indicator {
+	visibility: hidden; opacity: 0; transform: scale(1.4);
+}
+.sqs-template-picker.open {
+	opacity: 1;
+}
+.sqs-template-picker.open .sqs-template-picker-content {
+	transform: none;
+}
+.sqs-template-picker.fast {
+	transition:opacity 0.2s;
+}
+.sqs-template-picker.fast .sqs-template-picker-content {
+	transition:0.2s;
+}
+.sqs-template-picker.immediate {
+	transition:none;
+}
+.sqs-template-picker.immediate .sqs-template-picker-content {
+	transition:none;
+}
