@@ -16,6 +16,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+font-family: "orpheus_pro-webfont";
+src: url("orpheus_pro-webfont.eot");
+src: url("orpheus_pro-webfont.woff") format("woff"),
+url("orpheus_pro-webfont.otf") format("opentype"),
+url("orpheus_pro-webfont.svg#filename") format("svg");
+}
 article {
 	display: block;
 }
