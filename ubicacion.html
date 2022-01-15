@@ -224,95 +224,12 @@ href="/mesa">            Mesa de Regalos
 href="/rsvp">              RSVP             
 </A>           </DIV></DIV></NAV></DIV></DIV></HEADER><main class="container" 
 id="page" role="main"><ARTICLE class="sections" id="sections" 
-data-page-sections="5ceeee14ea7beb000195ffc5"><SECTION class="page-section&#10;    &#10;      layout-engine-section&#10;    &#10;    background-width--full-bleed&#10;    &#10;      section-height--large&#10;    &#10;    &#10;      content-width--medium&#10;    &#10;    horizontal-alignment--center&#10;    vertical-alignment--top&#10;     has-background&#10;    &#10;    black" 
-data-test="page-section" data-current-styles='{&#10;"backgroundImage": {&#10;"id": "5cefe3ebdffb7000016a6baf",&#10;"recordType": 2,&#10;"addedOn": 1559225323181,&#10;"updatedOn": 1562693580314,&#10;"workflowState": 1,&#10;"publishOn": 1559225323181,&#10;"authorId": "60aec64ce737d655663a5747",&#10;"systemDataId": "1559225328058-BL08M5YPNO70AM5Q2ZH3",&#10;"systemDataVariants": "2500x1664,100w,300w,500w,750w,1000w,1500w,2500w",&#10;"systemDataSourceType": "JPG",&#10;"filename": "Stocksy_comp_701172.jpg",&#10;"mediaFocalPoint": {&#10;"x": 0.49090874945367136,&#10;"y": 0.6039376538146022,&#10;"source": 3&#10;},&#10;"colorData": {&#10;"topLeftAverage": "7e8164",&#10;"topRightAverage": "929176",&#10;"bottomLeftAverage": "343b1e",&#10;"bottomRightAverage": "535427",&#10;"centerAverage": "555e4b",&#10;"suggestedBgColor": "d1cec5"&#10;},&#10;"urlId": "j4jsp4er5se09xxmed1qwwl46h7apt",&#10;"title": "",&#10;"body": null,&#10;"likeCount": 0,&#10;"commentCount": 0,&#10;"publicCommentCount": 0,&#10;"commentState": 2,&#10;"unsaved": false,&#10;"author": {&#10;"id": "60aec64ce737d655663a5747",&#10;"displayName": "Guest User",&#10;"firstName": "Guest",&#10;"lastName": "User",&#10;"bio": ""&#10;},&#10;"assetUrl": "/files/hands.jpg",&#10;"contentType": "image/jpeg",&#10;"items": [ ],&#10;"pushedServices": { },&#10;"pendingPushedServices": { },&#10;"recordTypeLabel": "image",&#10;"originalSize": "2500x1664"&#10;},&#10;"imageOverlayOpacity": 0.15,&#10;"backgroundWidth": "background-width--full-bleed",&#10;"sectionHeight": "section-height--large",&#10;"horizontalAlignment": "horizontal-alignment--center",&#10;"verticalAlignment": "vertical-alignment--top",&#10;"contentWidth": "content-width--medium",&#10;"sectionTheme": "black",&#10;"sectionAnimation": "none",&#10;"backgroundMode": "image"&#10;}' 
-data-animation="none" data-controller="SectionWrapperController" 
-data-section-id="5ceeee309b747a1ef474f7ef" data-section-theme="black">
-<DIV class="section-background">
-<SCRIPT>
-  "use strict";
+data-page-sections="5ceeee14ea7beb000195ffc5">
 
-  var positionImage = function positionImage(imageEl) {
-    var imageDimensions = imageEl.dataset.imageDimensions.split('x');
-    var originalWidth = imageDimensions[0];
-    var originalHeight = imageDimensions[1];
-    var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
-    var focalPointX = focalPoint[0];
-    var focalPointY = focalPoint[1];
-    var parentNode = imageEl.parentNode;
 
-    var scale = function () {
-      var imageRatio = originalWidth / originalHeight;
-      var parentClientSize = {
-        height: parentNode.clientHeight,
-        width: parentNode.clientWidth
-      };
-      var parentRatio = parentClientSize.width / parentClientSize.height;
 
-      if (imageRatio > parentRatio) {
-        return parentClientSize.height / originalHeight;
-      }
 
-      return parentClientSize.width / originalWidth;
-    }();
 
-    var getRelativeOffset = function getRelativeOffset() {
-      var targetWidth = Math.ceil(originalWidth * scale);
-      var targetHeight = Math.ceil(originalHeight * scale);
-      var parentDimensionWidth = parentNode.offsetWidth;
-      var parentDimensionHeight = parentNode.offsetHeight;
-      var overflowWidth = targetWidth - parentDimensionWidth;
-      var overflowHeight = targetHeight - parentDimensionHeight;
-      var valueX;
-
-      if (overflowWidth === 0) {
-        valueX = focalPointX;
-      } else {
-        valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
-      }
-
-      var valueY;
-
-      if (overflowHeight === 0) {
-        valueY = focalPointY;
-      } else {
-        valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
-      }
-
-      return {
-        valueX: valueX,
-        valueY: valueY
-      };
-    };
-
-    var relativeOffset = getRelativeOffset();
-    var valueX = relativeOffset.valueX;
-    var valueY = relativeOffset.valueY;
-    imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
-  };
-</SCRIPT>
-       <IMG onload="positionImage(this); this.classList.add('loaded');" alt="" 
-data-src="/files/hands.jpg" 
-srcset="/files/hands.jpg?format=100w 100w,/files/hands.jpg?format=300w 300w,/files/hands.jpg?format=500w 500w,/files/hands.jpg?format=750w 750w,/files/hands.jpg?format=1000w 1000w,/files/hands.jpg?format=1500w 1500w,/files/hands.jpg?format=2500w 2500w" loading="lazy" sizes="(max-width: 799px) 200vw, 100vw" 
-data-load="false" data-image-focal-point="0.49090874945367136,0.6039376538146022" 
-data-image-dimensions="2500x1664" data-image="/files/hands.jpg"> 
-                      
-<DIV class="section-background-overlay" style="opacity: 0.15;"></DIV></DIV>
-<DIV class="content-wrapper">
-<DIV class="content">
-<DIV class="sqs-layout sqs-grid-12 columns-12" id="page-section-5ceeee309b747a1ef474f7ef" 
-data-type="page-section">
-<DIV class="row sqs-row">
-<DIV class="col sqs-col-12 span-12">
-<DIV class="sqs-block spacer-block sqs-block-spacer sized vsize-1" id="block-yui_3_17_2_1_1562830018045_9225" 
-data-block-type="21">
-<DIV class="sqs-block-content">&nbsp;</DIV></DIV>
-<DIV class="sqs-block html-block sqs-block-html" id="block-060dc0d662995a4257e2" 
-data-block-type="2">
-<DIV class="sqs-block-content">
-<P class="sqsrte-large" style="text-align: center; white-space: pre-wrap;font-family: orpheus_pro-webfont; font-size:1.1rem; font-style: italic;">Nosotros amamos,<br> porque Él nos amó primero.</P>
-<H1 style="text-align: center; white-space: pre-wrap; font-family: orpheus_pro-webfont; font-size:7vmax;">Leslie&nbsp;&amp;&nbsp;Andrés</H1>
-<P style="text-align: center; white-space: pre-wrap; font-family: orpheus_pro-webfont;"><STRONG>12 . MAR . 22</STRONG></P></DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION> 
       <SECTION class="page-section&#10;    &#10;      layout-engine-section&#10;    &#10;    background-width--inset&#10;    &#10;      section-height--medium&#10;    &#10;    &#10;      content-width--wide&#10;    &#10;    horizontal-alignment--center&#10;    vertical-alignment--middle&#10;    &#10;    &#10;    " 
 data-test="page-section" data-current-styles='{&#10;"imageOverlayOpacity": 0.15,&#10;"backgroundWidth": "background-width--inset",&#10;"sectionHeight": "section-height--medium",&#10;"customSectionHeight": 40,&#10;"horizontalAlignment": "horizontal-alignment--center",&#10;"verticalAlignment": "vertical-alignment--middle",&#10;"contentWidth": "content-width--wide",&#10;"sectionAnimation": "none",&#10;"backgroundMode": "image"&#10;}' 
 data-animation="none" data-controller="SectionWrapperController" 
@@ -387,35 +304,7 @@ data-width-ratio="">
 
 
 
-       <SECTION 
-class="page-section&#10;    &#10;      layout-engine-section&#10;    &#10;    background-width--inset&#10;    &#10;      section-height--large&#10;    &#10;    &#10;      content-width--medium&#10;    &#10;    horizontal-alignment--center&#10;    vertical-alignment--middle&#10;     has-background&#10;    &#10;    dark-bold" 
-data-test="page-section" data-current-styles='{&#10;"backgroundImage": {&#10;"id": "5cefecd0387f9300012200a0",&#10;"recordType": 2,&#10;"addedOn": 1559227600387,&#10;"updatedOn": 1562693580329,&#10;"workflowState": 1,&#10;"publishOn": 1559227600387,&#10;"authorId": "60aec64ce737d655663a5747",&#10;"systemDataId": "1559227603693-UQTJUFBPODCR7QQRK17Y",&#10;"systemDataVariants": "2500x1664,100w,300w,500w,750w,1000w,1500w,2500w",&#10;"systemDataSourceType": "JPG",&#10;"filename": "Stocksy_comp_701178.jpg",&#10;"mediaFocalPoint": {&#10;"x": 0.4945576274311626,&#10;"y": 0.21558654634946672,&#10;"source": 3&#10;},&#10;"colorData": {&#10;"topLeftAverage": "e1dddb",&#10;"topRightAverage": "edebec",&#10;"bottomLeftAverage": "606543",&#10;"bottomRightAverage": "959285",&#10;"centerAverage": "777163",&#10;"suggestedBgColor": "d9d5d2"&#10;},&#10;"urlId": "tup75k66ui44kuuix73j2ukzelp9at",&#10;"title": "",&#10;"body": null,&#10;"likeCount": 0,&#10;"commentCount": 0,&#10;"publicCommentCount": 0,&#10;"commentState": 2,&#10;"unsaved": false,&#10;"author": {&#10;"id": "60aec64ce737d655663a5747",&#10;"displayName": "Guest User",&#10;"firstName": "Guest",&#10;"lastName": "User",&#10;"bio": ""&#10;},&#10;"assetUrl": "https://andresmtzc.github.io/leslie/files/walk.jpg",&#10;"contentType": "image/jpeg",&#10;"items": [ ],&#10;"pushedServices": { },&#10;"pendingPushedServices": { },&#10;"recordTypeLabel": "image",&#10;"originalSize": "2500x1664"&#10;},&#10;"imageOverlayOpacity": 0.15,&#10;"backgroundWidth": "background-width--inset",&#10;"sectionHeight": "section-height--large",&#10;"horizontalAlignment": "horizontal-alignment--center",&#10;"verticalAlignment": "vertical-alignment--middle",&#10;"contentWidth": "content-width--medium",&#10;"sectionTheme": "dark-bold",&#10;"sectionAnimation": "none",&#10;"backgroundMode": "image"&#10;}' 
-data-animation="none" data-controller="SectionWrapperController" 
-data-section-id="5cefec71accc270001f23047" data-section-theme="dark-bold">
-<DIV class="section-background"><IMG alt="" data-src="https://andresmtzc.github.io/leslie/files/walk.jpg" 
-data-load="false" data-image-focal-point="0.4945576274311626,0.21558654634946672" 
-data-image-dimensions="2500x1664" data-image="https://andresmtzc.github.io/leslie/files/walk.jpg"> 
-
-<DIV class="section-background-overlay" style="opacity: 0.15;"></DIV></DIV>
-<DIV class="content-wrapper" style="margin-top:-400px;">
-<DIV class="content">
-<DIV class="sqs-layout sqs-grid-12 columns-12" id="page-section-5cefec71accc270001f23047" 
-data-type="page-section">
-<DIV class="row sqs-row">
-<DIV class="col sqs-col-12 span-12">
-<DIV class="sqs-block html-block sqs-block-html" id="block-961e8912b9d5494c36d1" 
-data-block-type="2">
-<DIV class="sqs-block-content">
-
-<H1 style="text-align: center; white-space: pre-wrap; font-family: orpheus_pro-webfont;">Sería nuestra alegría contar con tu compañía</H1></DIV></DIV>
-<DIV class="sqs-block button-block sqs-block-button" id="block-952db37702738a997751" 
-data-block-type="53">
-<DIV class="sqs-block-content">
-<DIV class="sqs-block-button-container--center" data-animation-role="button" 
-data-button-type="primary" data-button-size="medium" data-alignment="center"><A 
-class="sqs-block-button-element--medium sqs-button-element--primary sqs-block-button-element" 
-href="/rsvp">    RSVP   </A> 
-</DIV></DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION>   </ARTICLE></main>
+          </ARTICLE></main>
 <SCRIPT type="text/javascript">
         const firstSection = document.querySelector('.page-section');
         const header = document.querySelector('.header');
