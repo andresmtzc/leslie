@@ -2,9 +2,9 @@
   position: absolute;
   width:50%;
   height:75px;
-  bottom: 10px;
+  bottom: -520px;
   right:10px;
-  background-color: white;
+  background-color: #dfe0e1;
   z-index: 1000;
 }
 
@@ -12,8 +12,8 @@
     .blockads {
   position: absolute;
   width:50%;
-  height:95px;
-  bottom: 3px;
+  height:75px;
+  bottom: 520px;
   left:10px;
   background-color: #dfe0e1;
   z-index: 1000; }
