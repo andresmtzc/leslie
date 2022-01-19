@@ -234,112 +234,56 @@ data-page-sections="5ceeee14ea7beb000195ffc5">
 
 
 
-<SECTION class="page-section&#10;    &#10;      layout-engine-section&#10;    &#10;    background-width--inset&#10;    &#10;      section-height--large&#10;    &#10;    &#10;      content-width--wide&#10;    &#10;    horizontal-alignment--center&#10;    vertical-alignment--middle&#10;    &#10;       has-background&#10;    &#10;    &#10;    bright" 
-data-test="page-section" data-current-styles='{&#10;                      "backgroundImage": {&#10;                        "id": "5ceff44fbe7eb6000193a6f4",&#10;                        "recordType": 2,&#10;                        "addedOn": 1559229519620,&#10;                        "updatedOn": 1562720037870,&#10;                        "workflowState": 1,&#10;                        "publishOn": 1559229519620,&#10;                        "authorId": "60aec64ce737d655663a5747",&#10;                        "systemDataId": "1559229540052-ORR4CXF5ZUAE4QUD6FDU",&#10;                        "systemDataVariants": "2500x1664,100w,300w,500w,750w,1000w,1500w,2500w",&#10;                        "systemDataSourceType": "JPG",&#10;                        "filename": "walkin.jpg",&#10;                        "mediaFocalPoint": {&#10;                          "x": 0.49790175644667833,&#10;                          "y": 0.6082034454470877,&#10;                          "source": 3&#10;                        },&#10;                        "colorData": {&#10;                          "topLeftAverage": "c8c8c8",&#10;                          "topRightAverage": "e3e3e3",&#10;                          "bottomLeftAverage": "717171",&#10;                          "bottomRightAverage": "707070",&#10;                          "centerAverage": "767676",&#10;                          "suggestedBgColor": "aaaaaa"&#10;                        },&#10;                        "urlId": "bvbkr4rb3mfutyav4njqixhmagjmqd",&#10;                        "title": "",&#10;                        "body": null,&#10;                        "likeCount": 0,&#10;                        "commentCount": 0,&#10;                        "publicCommentCount": 0,&#10;                        "commentState": 2,&#10;                        "unsaved": false,&#10;                        "author": {&#10;                          "id": "60aec64ce737d655663a5747",&#10;                          "displayName": "Guest User",&#10;                          "firstName": "Guest",&#10;                          "lastName": "User",&#10;                          "bio": ""&#10;                        },&#10;                        "assetUrl": "/files/walkin.jpg",&#10;                        "contentType": "image/jpeg",&#10;                        "items": [ ],&#10;                        "pushedServices": { },&#10;                        "pendingPushedServices": { },&#10;                        "recordTypeLabel": "image",&#10;                        "originalSize": "2500x1664"&#10;                      },&#10;                      "imageOverlayOpacity": 0.15,&#10;                      "backgroundWidth": "background-width--inset",&#10;                      "sectionHeight": "section-height--large",&#10;                      "customSectionHeight": 10,&#10;                      "horizontalAlignment": "horizontal-alignment--center",&#10;                      "verticalAlignment": "vertical-alignment--middle",&#10;                      "contentWidth": "content-width--wide",&#10;                      "customContentWidth": 50,&#10;                      "sectionTheme": "bright",&#10;                      "sectionAnimation": "none",&#10;                      "backgroundMode": "image"&#10;                    }' 
+
+
+
+<SECTION class="page-section&#10;    &#10;      layout-engine-section&#10;    &#10;    background-width--inset&#10;    &#10;      section-height--medium&#10;    &#10;    &#10;      content-width--wide&#10;    &#10;    horizontal-alignment--center&#10;    vertical-alignment--middle&#10;    &#10;    &#10;    " 
+data-test="page-section" data-current-styles='{&#10;"imageOverlayOpacity": 0.15,&#10;"backgroundWidth": "background-width--inset",&#10;"sectionHeight": "section-height--medium",&#10;"customSectionHeight": 40,&#10;"horizontalAlignment": "horizontal-alignment--center",&#10;"verticalAlignment": "vertical-alignment--middle",&#10;"contentWidth": "content-width--wide",&#10;"sectionAnimation": "none",&#10;"backgroundMode": "image"&#10;}' 
 data-animation="none" data-controller="SectionWrapperController" 
-data-section-id="5cefef4952a99e0001c53186" data-section-theme="bright">
-<DIV class="section-background">
-<SCRIPT>
-  "use strict";
-
-  var positionImage = function positionImage(imageEl) {
-    var imageDimensions = imageEl.dataset.imageDimensions.split('x');
-    var originalWidth = imageDimensions[0];
-    var originalHeight = imageDimensions[1];
-    var focalPoint = imageEl.dataset.imageFocalPoint.split(',');
-    var focalPointX = focalPoint[0];
-    var focalPointY = focalPoint[1];
-    var parentNode = imageEl.parentNode;
-
-    var scale = function () {
-      var imageRatio = originalWidth / originalHeight;
-      var parentClientSize = {
-        height: parentNode.clientHeight,
-        width: parentNode.clientWidth
-      };
-      var parentRatio = parentClientSize.width / parentClientSize.height;
-
-      if (imageRatio > parentRatio) {
-        return parentClientSize.height / originalHeight;
-      }
-
-      return parentClientSize.width / originalWidth;
-    }();
-
-    var getRelativeOffset = function getRelativeOffset() {
-      var targetWidth = Math.ceil(originalWidth * scale);
-      var targetHeight = Math.ceil(originalHeight * scale);
-      var parentDimensionWidth = parentNode.offsetWidth;
-      var parentDimensionHeight = parentNode.offsetHeight;
-      var overflowWidth = targetWidth - parentDimensionWidth;
-      var overflowHeight = targetHeight - parentDimensionHeight;
-      var valueX;
-
-      if (overflowWidth === 0) {
-        valueX = focalPointX;
-      } else {
-        valueX = Math.max(Math.min(targetWidth * focalPointX - parentDimensionWidth * 0.5, overflowWidth), 0) / overflowWidth;
-      }
-
-      var valueY;
-
-      if (overflowHeight === 0) {
-        valueY = focalPointY;
-      } else {
-        valueY = Math.max(Math.min(targetHeight * focalPointY - parentDimensionHeight * 0.5, overflowHeight), 0) / overflowHeight;
-      }
-
-      return {
-        valueX: valueX,
-        valueY: valueY
-      };
-    };
-
-    var relativeOffset = getRelativeOffset();
-    var valueX = relativeOffset.valueX;
-    var valueY = relativeOffset.valueY;
-    imageEl.style.objectPosition = "".concat(valueX * 100, "% ").concat(valueY * 100, "%");
-  };
-</SCRIPT>
-       <IMG onload="positionImage(this); this.classList.add('loaded');" alt="" 
-data-src="/files/walkin.jpg" 
-srcset="/files/walkin.jpg?format=100w 100w,/files/walkin.jpg?format=300w 300w,/files/walkin.jpg?format=500w 500w,/files/walkin.jpg?format=750w 750w,/files/walkin.jpg?format=1000w 1000w,/files/walkin.jpg?format=1500w 1500w,/files/walkin.jpg?format=2500w 2500w" loading="lazy" sizes="(max-width: 799px) 200vw, 100vw" 
-data-load="false" data-image-focal-point="0.49790175644667833,0.6082034454470877" 
-data-image-dimensions="2500x1664" data-image="/files/walkin.jpg"> 
-                      
-<DIV class="section-background-overlay" style="opacity: 0.15;"></DIV></DIV>
+data-section-id="5cefe8612b152f00014ad6cb" data-section-theme="">
+<DIV class="section-background"></DIV>
 <DIV class="content-wrapper">
 <DIV class="content">
-<DIV class="sqs-layout sqs-grid-12 columns-12" id="page-section-5cefef4952a99e0001c53186" 
+<DIV class="sqs-layout sqs-grid-12 columns-12" id="page-section-5cefe8612b152f00014ad6cb" 
 data-type="page-section">
 <DIV class="row sqs-row">
 <DIV class="col sqs-col-12 span-12">
-<DIV class="sqs-block html-block sqs-block-html" id="block-yui_3_17_2_1_1559229503702_14767" 
-data-block-type="2">
-<DIV class="sqs-block-content">
-</DIV></DIV></DIV></DIV></DIV></DIV></DIV></SECTION> 
+<DIV class="sqs-block image-block sqs-block-image" id="block-e5e6452018916bf176a2" 
+data-block-type="5">
+<DIV class="sqs-block-content"><FIGURE class="&#10;            sqs-block-image-figure&#10;            image-block-outer-wrapper&#10;            image-block-v2&#10;            design-layout-card&#10;            combination-animation-slide-up&#10;            individual-animation-none&#10;            individual-text-animation-none&#10;            image-position-left&#10;            image-linked&#10;          " 
+data-test="image-block-v2-outer-wrapper" data-scrolled="">
+<DIV class="intrinsic"><A class="&#10;                &#10;                  sqs-block-image-link&#10;                &#10;                image-inset" 
+href="" target="#" 
+data-animation-role="image" data-animation-override="" data-description="">
+<DIV class="sqs-image-shape-container-element&#10;              &#10;                content-fit&#10;              &#10;            " 
+style="overflow: hidden; position: relative;"><NOSCRIPT>&lt;img 
+src="https://andresmtzc.github.io/leslie/files/gracias.jpg" 
+;</NOSCRIPT>               <IMG alt="gracias.jpg" 
+data-src="https://andresmtzc.github.io/leslie/files/gracias.jpg" 
+loading="lazy" data-image-focal-point="0.3147154850746269,0.5476190476190477" 
+data-image-dimensions="1065x1332" data-image="https://andresmtzc.github.io/leslie/files/gracias.jpg" 
+data-component-key="idv1.i.5cefea0aeb7e6a000132d8ec">
+<DIV class="image-overlay" 
+style="overflow: hidden;"></DIV></DIV></A></DIV><FIGCAPTION class="image-card-wrapper" 
+data-width-ratio="">
+<DIV class="image-card sqs-dynamic-text-container">
+<DIV class="image-title-wrapper">
+<DIV class="image-title sqs-dynamic-text" data-animation-override="">
+<H1 style="white-space: pre-wrap; font-family: orpheus_pro-webfont;"></H1></DIV></DIV>
+<DIV class="image-subtitle-wrapper">
+<DIV class="image-subtitle sqs-dynamic-text" data-animation-override="">
+<H3 style="white-space: pre-wrap; font-family: orpheus_pro-webfont;">¡Gracias!</H3>
+<P class="sqsrte-large" style="white-space: pre-wrap; font-family: orpheus_pro-webfont;">Ya recibimos tu RSVP</P>
+<P class="sqsrte-large" style="white-space: pre-wrap;"></P></DIV></DIV></DIV></FIGCAPTION> 
+              </FIGURE>       </DIV></DIV>
+
+
+
+</DIV></DIV></DIV></DIV></DIV></SECTION>      
 
 
 
 
-
-
-<div id="ff-compose"></div>
-<script async defer src="https://formfacade.com/include/113454853617288722846/form/1FAIpQLScQOSB_V_skmlwmJIMhm9uEcMDZvy9VatJJMWcRUnWwNeHEhA/classic.js?div=ff-compose"></script>
-
-  <!-- <div id="popo" style="
-  position: absolute;
-  width:50%;
-  height:75px;
-  bottom: -520px;
-  right:10px;
-  background-color: black;
-  z-index: 1000;
-  ">
-</div>
--->
-<div class="blockads">
-</div>
 
 
 
