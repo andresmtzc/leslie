@@ -12,8 +12,8 @@
     .blockads {
   position: absolute;
   width:50%;
-  height:110px;
-  bottom: -635px;
+  height:107px;
+  bottom: -640px;
   left:10px;
   background-color: #dfe0e1;
   z-index: 1000; }
@@ -153,7 +153,7 @@ pre {
 	white-space: pre-wrap;
 }
 q {
-	quotes: "“" "”" "‘" "’";
+	quotes: "â€œ" "â€" "â€˜" "â€™";
 }
 small {
 	font-size: 80%;
@@ -609,7 +609,7 @@ body > .sqs-cookie-banner-v2.TOP {
 	padding: 5px 10px; border: 0px currentColor; border-image: none;
 }
 .sqs-cookie-banner-v2.ICON .sqs-cookie-banner-v2-accept::after {
-	line-height: 0.5em; font-family: "Helvetica Neue",Helvetica,Sans-serif; font-size: 35px; font-weight: 100; content: "×";
+	line-height: 0.5em; font-family: "Helvetica Neue",Helvetica,Sans-serif; font-size: 35px; font-weight: 100; content: "Ã—";
 }
 .sqs-cookie-banner-v2.BAR {
 	left: 0px; right: 0px;
@@ -765,7 +765,7 @@ body > .sqs-cookie-banner-v2.TOP {
 	padding: 5px 10px; border: 0px currentColor; border-image: none;
 }
 .sqs-cookie-banner-v2.ICON .sqs-cookie-banner-v2-accept::after {
-	line-height: 0.5em; font-family: "Helvetica Neue",Helvetica,Sans-serif; font-size: 35px; font-weight: 100; content: "×";
+	line-height: 0.5em; font-family: "Helvetica Neue",Helvetica,Sans-serif; font-size: 35px; font-weight: 100; content: "Ã—";
 }
 .sqs-cookie-banner-v2.BAR {
 	left: 0px; right: 0px;
@@ -855,10 +855,10 @@ body.native-currency-code-cad .sqs-money-native::after {
 	content: " CAD";
 }
 body.native-currency-code-gbp .sqs-money-native::before {
-	content: "£";
+	content: "Â£";
 }
 body.native-currency-code-eur .sqs-money-native::before {
-	content: "€";
+	content: "â‚¬";
 }
 body.native-currency-code-aud .sqs-money-native::before {
 	content: "$";
@@ -930,7 +930,7 @@ body.native-currency-code-inr .sqs-money-native::before {
 	content: "?";
 }
 body.native-currency-code-jpy .sqs-money-native::before {
-	content: "¥";
+	content: "Â¥";
 }
 body.native-currency-code-zar .sqs-money-native::before {
 	content: "R";
@@ -5196,7 +5196,7 @@ ul[data-rte-list='dash'] li > *:first-child::before {
 	background: rgba(0, 0, 0, 0.15); top: 0px; width: 2.8em; height: 2.78em; right: 0px; color: rgb(255, 255, 255); position: absolute; cursor: pointer;
 }
 .sqs-announcement-bar-close::after {
-	padding: 0px; line-height: 2.7em; letter-spacing: normal; font-family: helvetica,arial,sans-serif; font-size: 1em; font-weight: 100; display: block; content: "×";
+	padding: 0px; line-height: 2.7em; letter-spacing: normal; font-family: helvetica,arial,sans-serif; font-size: 1em; font-weight: 100; display: block; content: "Ã—";
 }
 .sqs-announcement-bar-hidden {
 	display: none;
@@ -11067,25 +11067,25 @@ body.sqs-tweak-overlays-active .sqs-block-image .design-layout-poster .image-car
 	display: inline-block;
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-date .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-event-time .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-cats .summary-item-has-cats .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-tags .summary-item-has-tags .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-author .summary-item-has-author .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-comments .summary-item-has-comments-enabled .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-secondary-metadata-location .summary-item-has-location .summary-metadata--primary .summary-metadata-item::after {
-	margin: 0px 0.3em; content: " ·";
+	margin: 0px 0.3em; content: " Â·";
 }
 .sqs-block-summary-v2 .summary-block-setting-text-align-center .summary-title {
 	text-align: center;
@@ -14021,16 +14021,16 @@ img[data-src]:not([srcset]):not([src]) {
 	padding-right: 0px !important;
 }
 [data-layout='inline'][data-delimiter='bullet'].portfolio-hover :not(:last-child).portfolio-hover-item .portfolio-hover-item-title::after {
-	content: "•";
+	content: "â€¢";
 }
 [data-layout='inline'][data-mode='hover-cover'][data-delimiter='bullet'].portfolio-hover li:not(:last-child) .portfolio-hover-item .portfolio-hover-item-title::after {
-	content: "•";
+	content: "â€¢";
 }
 [data-layout='inline'][data-delimiter='hyphen'].portfolio-hover :not(:last-child).portfolio-hover-item .portfolio-hover-item-title::after {
-	content: "—";
+	content: "â€”";
 }
 [data-layout='inline'][data-mode='hover-cover'][data-delimiter='hyphen'].portfolio-hover li:not(:last-child) .portfolio-hover-item .portfolio-hover-item-title::after {
-	content: "—";
+	content: "â€”";
 }
 [data-layout='inline'][data-delimiter='forward-slash'].portfolio-hover :not(:last-child).portfolio-hover-item .portfolio-hover-item-title::after {
 	font-size: 0.85em; content: "/";
@@ -20229,10 +20229,10 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 	padding: 0px 0.5em;
 }
 .tweak-blog-item-delimiter-bullet .blog-item-wrapper :not(:last-child).blog-item-category-wrapper::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-item-delimiter-bullet .blog-item-wrapper :not(:last-child).blog-item-tag-wrapper::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-item-delimiter-pipe .blog-item-wrapper :not(:last-child).blog-item-category-wrapper::after {
 	content: "|";
@@ -20283,7 +20283,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 	padding: 0px 0.5em;
 }
 .tweak-blog-item-show-date.tweak-blog-item-show-author-name.tweak-blog-item-delimiter-bullet .blog-item-wrapper .blog-meta-item--date::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-item-show-date.tweak-blog-item-show-author-name.tweak-blog-item-delimiter-pipe .blog-item-wrapper .blog-meta-item--date::after {
 	content: "|";
@@ -20499,7 +20499,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 }
 }
 .tweak-blog-basic-grid-delimiter-bullet .blog-basic-grid .blog-meta-delimiter::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-basic-grid-delimiter-pipe .blog-basic-grid .blog-meta-delimiter::after {
 	content: "|";
@@ -20706,7 +20706,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 	text-decoration: underline;
 }
 .tweak-blog-single-column-delimiter-bullet .blog-single-column .blog-meta-delimiter::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-single-column-delimiter-pipe .blog-single-column .blog-meta-delimiter::after {
 	content: "|";
@@ -20964,7 +20964,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 }
 }
 .tweak-blog-side-by-side-delimiter-bullet .blog-side-by-side .blog-meta-delimiter::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-side-by-side-delimiter-pipe .blog-side-by-side .blog-meta-delimiter::after {
 	content: "|";
@@ -21234,7 +21234,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 }
 }
 .tweak-blog-alternating-side-by-side-delimiter-bullet .blog-alternating-side-by-side .blog-meta-delimiter::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-alternating-side-by-side-delimiter-pipe .blog-alternating-side-by-side .blog-meta-delimiter::after {
 	content: "|";
@@ -21426,7 +21426,7 @@ body.primary-button-style-outline .header-menu .header-menu-cta a:hover {
 }
 }
 .tweak-blog-masonry-delimiter-bullet .blog-masonry .blog-meta-delimiter::after {
-	content: "•";
+	content: "â€¢";
 }
 .tweak-blog-masonry-delimiter-pipe .blog-masonry .blog-meta-delimiter::after {
 	content: "|";
