@@ -1,9 +1,9 @@
 .blockads{
-  position: absolute;
+  position: relative;
   width:50%;
   height:100px;
-  bottom: -530px;
-  right:10px;
+  top: -100px;
+  left:50%;
   background-color: #dfe0e1;
   z-index: 1000;
 }
@@ -14,8 +14,8 @@
 	    display:block;
   width:50%;
   height:107px;
-	    bottom:0px;
-	    right:0px;
+	    top:0px;
+	    left:0px;
   
  
   background-color: #dfe0e1;
