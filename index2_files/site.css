@@ -10,11 +10,12 @@
 
 @media all and (max-width: 768px) {
     .blockads {
-  position: absolute;
+  position: relative;
+	    display:block;
   width:50%;
   height:107px;
-  bottom: -640px;
-  left:10px;
+  
+ 
   background-color: #dfe0e1;
   z-index: 1000; }
 }
